@@ -48,12 +48,13 @@ function Guide() {
             </button>
           ))}
         </div>
-        <div className="portrait">
-          <img
-            src={A + "avatarPharmacyHealthGuide.png"}
-            alt="Your Pharmacy Guide"
-          />
-        </div>
+      <div className="portrait">
+        <img
+          src={A + "avatarPharmacyHealthGuide.png"}
+          alt="Your Pharmacy Guide"
+        />
+        <span className="portrait-status" aria-label="Available" />
+      </div>
       </div>
     </section>
   );
