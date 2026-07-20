@@ -70,7 +70,7 @@ function Medication({ m }) {
         <img src={A + m.image} alt="" />
         <div className="drug-info">
           <h3>{m.name}</h3>
-          <p>♙ {m.option ? "" : "Refills Left 1"}</p>
+          {!m.option && <p className="refill-meta"><img src={A + "Refill.svg"} alt=""/>Refills Left 1</p>}
         </div>
       </div>
       {m.option ? (
